@@ -1,0 +1,8 @@
+
+## data/sample_notes.txt
+```text
+Computer Networks: The OSI Model divides network communication into seven layers: Physical, Data Link, Network, Transport, Session, Presentation, Application. TCP operates at the Transport layer and provides reliable, ordered, and error-checked delivery of a stream of bytes. UDP is connectionless and does not guarantee delivery or order. 
+
+In databases, normalization reduces redundancy and improves data integrity. Third Normal Form (3NF) requires that all the attributes are functionally dependent on the primary key and that there are no transitive dependencies.
+
+In algorithms, Dijkstra's algorithm finds the shortest paths from a source node to all other nodes in a graph with non-negative edge weights. Its typical time complexity using a binary heap is O((V + E) log V).
