@@ -40,7 +40,7 @@ def make_cards(
             })
         else:
             q = f"What is {phrase}?"
-]            context = sentences[0] if sentences else ""
+            context = sentences[0] if sentences else ""
             cards.append({
                 "Front": q,
                 "Back": context,
