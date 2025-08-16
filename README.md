@@ -1,23 +1,23 @@
 # Smart Flashcards from Lecture Notes
 
-Turn raw notes into **Anki-ready flashcards** in seconds. Paste notes or upload a .txt/.md file → extract keyphrases → generate cloze/Q&A cards → edit → export CSV.
+A small tool that turns class notes into flashcards you can import into Anki. Paste text or upload a .txt/.md file—the app finds key terms, builds fill-in-the-blank or Q&A cards, lets you edit them, and exports a CSV.
 
-## Features
-- RAKE keyphrase extraction
-- Cloze (“fill-in-the-blank”) and simple Q&A generation
-- Semantic dedupe using TF-IDF cosine similarity
-- Streamlit UI with in-place editing
-- CLI export for automation
+## What it does
+- Finds important terms (RAKE keyphrase extraction).
+- Creates cloze (fill-in-the-blank) and simple Q&A cards.
+- Removes near-duplicate cards using TF-IDF similarity.
+- Simple Streamlit web UI with in-place editing.
+- Command-line script for batch export.
 
-## Quickstart (Windows, VS Code)
+## Get started (Windows + VS Code)
 ```powershell
-# 1) Clone or create the folder, then:
+# 1) Create and activate a virtual environment, then install deps
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
-# 2) Run the app
+# 2) Run the web app
 streamlit run web/app.py
 
-# 3) (optional) CLI export
+# 3) Optional: generate a CSV from a file via CLI
 python generate.py --in data\sample_notes.txt --out cards.csv
